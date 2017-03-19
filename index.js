@@ -40,7 +40,7 @@ server.listen(port, function () {
 });
 
 app.get('/', function(req, res){
-	res.render("<h1>Welcome</h1>");
+	res.send("<h1>Welcome</h1>");
 });
 
 io.on('connection', function(socket){
