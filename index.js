@@ -33,7 +33,7 @@ app.set('view engine', 'ejs');
 
 
 var router = express.Router();
-
+var port = process.env.PORT || 3000;
 
 server.listen(port, function () {
   console.log('Server listening at port %d', port);
